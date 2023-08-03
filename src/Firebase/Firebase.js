@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCoMqSLUK3WwQQr632GRB5Anqs_-PWfLyY",
-    authDomain: "chocolate-dashboard-app.firebaseapp.com",
-    projectId: "chocolate-dashboard-app",
-    storageBucket: "chocolate-dashboard-app.appspot.com",
-    messagingSenderId: "477514877311",
-    appId: "1:477514877311:web:3a2a1376647706828c724a"
+    apiKey: process.env.REACT_APP_apiKey,
+    authDomain: process.env.REACT_APP_authDomain,
+    projectId: process.env.REACT_APP_projectId,
+    storageBucket: process.env.REACT_APP_storageBucket,
+    messagingSenderId: process.env.REACT_APP_messagingSenderId,
+    appId: process.env.REACT_APP_appId,
 };
 
 // Initialize Firebase
